@@ -1,46 +1,13 @@
-public class Student {
-    
-    private String name;
-    private int age;
+package week8;
 
-    
-    public Student(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
+public class Main {
 
-    public String getName() {
-        return name;
-    }
+	public static void main(String[] args) {
 
-    public void setName(String name) {
-        this.name = name;
-    }
+		Calculator cl = new Calculator();
+		float percentage = cl.calculatePercentage(23, 23);
+		System.out.println(percentage);
 
-    public int getAge() {
-        return age;
-    }
+	}
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public void displayInfo() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
-    }
-
-    public static void main(String[] args) {
-  
-        Student student = new Student("John Doe", 20);
-
-        student.displayInfo();
-
-        student.setName("Jane Smith");
-        student.setAge(22);
-
-        System.out.println("Updated Info:");
-        student.displayInfo();
-    }
 }
-
